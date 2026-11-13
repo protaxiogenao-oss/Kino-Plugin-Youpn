@@ -1,0 +1,79 @@
+{
+  "id": "youporn",
+  "name": "YouPorn",
+  "version": "1.0.2",
+  "apiVersion": 6,
+  "entry": "plugin.js",
+  "description": "Vídeos para adultos de YouPorn.com. HLS multi-calidad, búsqueda y secciones de inicio. Sin contenido gay ni trans.",
+  "author": "Hotaru Yume",
+  "creator": "hotaruyume",
+  "homepage": "https://www.youporn.com",
+  "hosts": [
+    "youporn.com",
+    "*.youporn.com",
+    "www.youporn.com",
+    "phncdn.com",
+    "*.phncdn.com",
+    "ypncdn.com",
+    "*.ypncdn.com",
+    "cdn.ypncdn.com",
+    "ev-ph.ypncdn.com",
+    "fi1-ph.ypncdn.com",
+    "dv.phncdn.com",
+    "ev.phncdn.com",
+    "fv.phncdn.com",
+    "ei.phncdn.com",
+    "pix-cdn77.ypncdn.com",
+    "cdn77.ypncdn.com",
+    "fi1.ypncdn.com"
+  ],
+  "streamHosts": "any",
+  "capabilities": [
+    "search",
+    "home",
+    "browse",
+    "resolve"
+  ],
+  "categories": [
+    "movies"
+  ],
+  "color": "#FF1493",
+  "icon": "icon.png",
+  "theme": {
+    "accent": "#FF1493",
+    "onAccent": "#FFFFFF",
+    "background": "#0A0A0A",
+    "surface": "#1A1A1A",
+    "highlight": "#FF69B4"
+  },
+  "settings": [
+    {
+      "key": "quality",
+      "label": "Calidad preferida",
+      "type": "select",
+      "default": "auto",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Automática (mejor disponible)"
+        },
+        {
+          "value": "1080",
+          "label": "1080p"
+        },
+        {
+          "value": "720",
+          "label": "720p"
+        },
+        {
+          "value": "480",
+          "label": "480p"
+        },
+        {
+          "value": "240",
+          "label": "240p"
+        }
+      ]
+    }
+  ]
+}
